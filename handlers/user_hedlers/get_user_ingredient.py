@@ -13,7 +13,7 @@ async def get_your_ingredient(update: Update, context: ContextTypes.DEFAULT_TYPE
 
     if ingredients.count == 0:
         await update.message.reply_text(
-            "You have *no* ingredients.",
+            localization.HAVE_NOT_INGREDIENTS,
             parse_mode=constants.ParseMode.MARKDOWN
         )
 
