@@ -53,7 +53,7 @@ async def get_recipe(update: Update, context: ContextTypes.DEFAULT_TYPE):
         ingredient = data_recipe["meals"][0][f"strIngredient{num + 1}"]
         measure = data_recipe["meals"][0][f"strMeasure{num + 1}"]
 
-        if ingredient != None and  ingredient != "" and  measure != None and  measure != "":
+        if ingredient != None and ingredient != "" and measure != None and measure != "":
             receipt = receipt + f'{data_recipe["meals"][0][f"strIngredient{num + 1}"]} - ' \
                                 f'{data_recipe["meals"][0][f"strMeasure{num + 1}"]}\n'
 
