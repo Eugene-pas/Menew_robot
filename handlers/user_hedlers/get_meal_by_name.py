@@ -78,14 +78,13 @@ async def get_recipe_text(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     await update.message.reply_text(
         receipt,
-        parse_mode=telegram.constants.ParseMode.MARKDOWN,
-        reply_markup=ReplyKeyboardRemove()
+        parse_mode=telegram.constants.ParseMode.MARKDOWN
     )
-    await update.message.reply_text(
-        localization.FIND_MEAL_HELP
-    )
+    # await update.message.reply_text(
+    #     localization.FIND_MEAL_HELP
+    # )
 
-    return GET_MEAL
+    return GET_INFO
 
 
 async def get_ingredients(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -118,13 +117,12 @@ async def get_ingredients(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     await update.message.reply_text(
         receipt,
-        parse_mode=telegram.constants.ParseMode.MARKDOWN,
-        reply_markup=ReplyKeyboardRemove()
+        parse_mode=telegram.constants.ParseMode.MARKDOWN
     )
-    await update.message.reply_text(
-        localization.FIND_MEAL_HELP
-    )
-    return GET_MEAL
+    # await update.message.reply_text(
+    #     localization.FIND_MEAL_HELP
+    # )
+    return GET_INFO
 
 
 def update_recipe_id(user_data):
