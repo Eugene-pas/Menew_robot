@@ -80,9 +80,6 @@ async def get_recipe_text(update: Update, context: ContextTypes.DEFAULT_TYPE):
         receipt,
         parse_mode=telegram.constants.ParseMode.MARKDOWN
     )
-    # await update.message.reply_text(
-    #     localization.FIND_MEAL_HELP
-    # )
 
     return GET_INFO
 
@@ -119,9 +116,7 @@ async def get_ingredients(update: Update, context: ContextTypes.DEFAULT_TYPE):
         receipt,
         parse_mode=telegram.constants.ParseMode.MARKDOWN
     )
-    # await update.message.reply_text(
-    #     localization.FIND_MEAL_HELP
-    # )
+
     return GET_INFO
 
 
