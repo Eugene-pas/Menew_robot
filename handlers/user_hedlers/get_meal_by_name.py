@@ -21,7 +21,7 @@ markup = ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True)
 recipe_id = None
 
 
-async def find_meal_by_name(update: Update):
+async def find_meal_by_name(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Start the conversation and ask user for input."""
     await update.message.reply_text(
         localization.FIND_MEAL_HELP
