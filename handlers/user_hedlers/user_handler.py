@@ -25,7 +25,8 @@ async def help(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
         "/find_meal_by_name - search for meal by name\n"
         "/get_your_ingredient - get all your ingredients\n"
-        "/select_meal_for_ingredients - get meal according to the ingredients"
+        "/select_meal_for_ingredients - get meal according to the ingredients\n"
+        "/add_ingredients - add new ingredients"
     )
 
 
